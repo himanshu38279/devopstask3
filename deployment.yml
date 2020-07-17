@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+ name: taks3web
+ labels:
+  env: web
+
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   env: dev
+ template:
+  metadata:
+    name: webtask3
+    labels:
+      app: web
+      env: dev
+      dc: IN
+  spec:
+    containers:
+      - name: cont1
+        image: vimal13/apache-webserver-php.yml
+        
+
+
