@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
- name: taks3web
+ name: webtaks3
  labels:
   env: web
 
