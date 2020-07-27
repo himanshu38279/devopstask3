@@ -20,7 +20,7 @@ spec:
   spec:
     containers:
       - name: cont1
-        image: himanshu38279myweb:v1
+        image: himanshu38279/myweb:v1
         
 
 
